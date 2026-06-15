@@ -1,11 +1,10 @@
 name: Scrape Talk Locations
 
+# Disabled by default for this personal homepage.
+# The site currently does not publish Talks or the talk map, so running the
+# template notebook on every talk-related push only creates avoidable failures.
 on:
-  push:
-    paths:
-      - 'talks/**'
-      - '_talks/**'
-      - 'talkmap.ipynb'
+  workflow_dispatch:
 
 jobs:
   build:
