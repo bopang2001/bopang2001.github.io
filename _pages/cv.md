@@ -30,7 +30,8 @@ Research interests
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
+  <ul>{% assign publications = site.publications | sort: "publication_order" %}
+  {% for post in publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 

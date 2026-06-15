@@ -13,6 +13,18 @@ My recent work includes PB-MOT, a pose-aware association approach for online 3D 
 
 I am interested in overseas academic exchange, postdoctoral opportunities, and research collaborations in robotics, autonomous driving, and spatial perception.
 
+Education
+======
+
+**Zhejiang University**, Hangzhou, China  
+Ph.D. in Control Science and Engineering, Sep 2023 -- Present  
+Advisors: Prof. Liang Li and Prof. Jiming Chen
+
+**Shandong University**, Jinan, China  
+B.Eng. in Automation, Sep 2019 -- Jun 2023  
+Advisors: Prof. Chaoqun Wang, Prof. Yan Li, and Prof. Bo Sun  
+GPA: 96.69 / 100
+
 Research Interests
 ======
 
@@ -21,15 +33,29 @@ Research Interests
 - Online 3D multi-object tracking
 - Autonomous navigation and map-light robot navigation
 
-Links
+Publications
 ======
 
-- [Curriculum Vitae](/files/MyCV.pdf)
-- [Google Scholar](https://scholar.google.com/citations?user=jLPrDZkAAAAJ&hl)
-- [IEEE Xplore author profile](https://ieeexplore.ieee.org/author/757841103996784)
-- [ORCID](https://orcid.org/0009-0002-5424-6260)
+{% include base_path %}
 
-Contact
-======
-
-TODO: add a public academic email address.
+{% if site.publication_category %}
+  {% assign publications = site.publications | sort: "publication_order" %}
+  {% for category in site.publication_category %}
+    {% assign title_shown = false %}
+    {% for post in publications %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% assign publications = site.publications | sort: "publication_order" %}
+  {% for post in publications %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

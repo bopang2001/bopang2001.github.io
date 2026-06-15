@@ -72,6 +72,20 @@
       "releaseDate": "2025-10-19",
       "website": "https://ieeexplore.ieee.org/document/11247375/",
       "summary": "Conference paper. DOI: 10.1109/IROS60139.2025.11247375."
+    },
+    {
+      "name": "PB-MOT++: Extending Pose-aware Association to Trajectory-Centric Offline Optimization",
+      "publisher": "Manuscript under review",
+      "releaseDate": "",
+      "website": "",
+      "summary": "Trajectory-centric offline optimization built on pose-aware association."
+    },
+    {
+      "name": "Robust Place Recognition on Sparse Maps via a Semantic-Enhanced Neural Network",
+      "publisher": "Manuscript in revision for journal resubmission",
+      "releaseDate": "",
+      "website": "",
+      "summary": "Semantic-enhanced sparse-map place recognition for robust localization and retrieval."
     }
   ],
   "presentations": [],
