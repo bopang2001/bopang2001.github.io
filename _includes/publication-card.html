@@ -1,0 +1,67 @@
+{% include base_path %}
+
+{% assign post = include.post | default: post %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign teaser = post.teaser | default: post.header.teaser %}
+
+<article class="publication-card" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <a class="publication-card__media" href="{{ base_path }}{{ post.url }}" aria-label="{{ title | strip_html }}">
+    {% if teaser %}
+      <img src=
+        {% if teaser contains "://" %}
+          "{{ teaser }}"
+        {% else %}
+          "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+        {% endif %}
+        alt="">
+    {% else %}
+      <div class="publication-card__placeholder" aria-hidden="true">
+        <span class="publication-card__placeholder-title">{{ post.thumbnail_label | default: "Research" }}</span>
+        <span class="publication-card__line publication-card__line--one"></span>
+        <span class="publication-card__line publication-card__line--two"></span>
+        <span class="publication-card__node publication-card__node--one"></span>
+        <span class="publication-card__node publication-card__node--two"></span>
+      </div>
+    {% endif %}
+  </a>
+
+  <div class="publication-card__body">
+    <h3 class="publication-card__title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}">{{ title }}</a>
+    </h3>
+
+    {% if post.authors %}
+      <div class="publication-card__authors">{{ post.authors }}</div>
+    {% endif %}
+
+    <div class="publication-card__venue">
+      {% if post.category == "manuscripts" %}
+        {{ post.status | default: post.venue }}
+      {% else %}
+        <em>{{ post.venue }}</em>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
+      {% endif %}
+    </div>
+
+    <div class="publication-card__links">
+      <a href="{{ base_path }}{{ post.url }}">[Abs]</a>
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">[Paper]</a>
+      {% endif %}
+      {% if post.doi %}
+        <a href="https://doi.org/{{ post.doi }}">[DOI]</a>
+      {% endif %}
+      {% if post.codeurl %}
+        <a href="{{ post.codeurl }}">[Code]</a>
+      {% endif %}
+      {% if post.projecturl %}
+        <a href="{{ post.projecturl }}">[Webpage]</a>
+      {% endif %}
+    </div>
+
+    {% if post.summary %}
+      <p class="publication-card__summary">{{ post.summary }}</p>
+    {% elsif post.excerpt %}
+      <div class="publication-card__summary">{{ post.excerpt | markdownify }}</div>
+    {% endif %}
+  </div>
+</article>

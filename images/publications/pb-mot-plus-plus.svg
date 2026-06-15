@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-labelledby="title desc">
+  <title id="title">PB-MOT++ illustration</title>
+  <desc id="desc">A schematic of trajectory-centric offline optimization.</desc>
+  <rect width="480" height="270" fill="#f7f5ef"/>
+  <rect x="24" y="28" width="432" height="214" fill="#ffffff" stroke="#d7d0c2" stroke-width="2"/>
+  <path d="M56 190 C118 70 186 208 246 126 C310 38 352 182 426 72" fill="none" stroke="#355c7d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M58 190 C130 92 190 188 250 132 C306 80 358 140 424 74" fill="none" stroke="#7a9e7e" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#b84a62" stroke-width="3" fill="#ffffff">
+    <circle cx="102" cy="124" r="12"/>
+    <circle cx="190" cy="188" r="12"/>
+    <circle cx="300" cy="82" r="12"/>
+    <circle cx="374" cy="128" r="12"/>
+  </g>
+  <g fill="#355c7d">
+    <rect x="72" y="202" width="58" height="12"/>
+    <rect x="210" y="150" width="58" height="12"/>
+    <rect x="354" y="86" width="58" height="12"/>
+  </g>
+  <text x="32" y="52" fill="#263238" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">PB-MOT++</text>
+  <text x="32" y="78" fill="#6d5f4d" font-family="Arial, Helvetica, sans-serif" font-size="15">Trajectory-centric offline optimization</text>
+</svg>

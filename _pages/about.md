@@ -50,12 +50,12 @@ Publications
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include publication-card.html post=post %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% assign publications = site.publications | sort: "publication_order" %}
   {% for post in publications %}
-    {% include archive-single.html %}
+    {% include publication-card.html post=post %}
   {% endfor %}
 {% endif %}

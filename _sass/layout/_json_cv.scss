@@ -119,6 +119,22 @@
   margin-bottom: 0.25rem;
 }
 
+.cv-pdf-viewer {
+  width: 100%;
+  min-height: 80vh;
+  margin-bottom: 2rem;
+  border: 1px solid var(--global-border-color);
+  background: var(--global-bg-color);
+}
+
+.cv-pdf-viewer object,
+.cv-pdf-viewer iframe {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  border: 0;
+}
+
 .cv-item-courses li {
   margin-bottom: 0.25rem;
 }

@@ -9,10 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
-Download
+PDF CV
 ======
 
-[Download my CV as a PDF](/files/MyCV.pdf).
+<div class="cv-pdf-viewer">
+  <object data="{{ base_path }}/files/MyCV.pdf" type="application/pdf">
+    <iframe src="{{ base_path }}/files/MyCV.pdf" title="Bo Pang CV"></iframe>
+  </object>
+</div>
 
 Education
 ======
