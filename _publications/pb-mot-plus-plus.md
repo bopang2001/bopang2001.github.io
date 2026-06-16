@@ -8,8 +8,10 @@ permalink: /publication/2025-10-20-pb-mot-plus-plus
 excerpt: "Trajectory-centric offline optimization built on pose-aware association."
 venue: "Manuscript under review"
 status: "Manuscript under review"
-teaser: "publications/pb-mot-plus-plus.svg"
-thumbnail_label: "PB-MOT++"
+videourl: "/images/publications/video/pb-motpp.mp4"
+kittiurl: "https://www.cvlibs.net/datasets/kitti/eval_tracking_detail.php?result=c84c4a1ca8d9548e0647af9aeba0c276b805144a"
+teaser: "publications/pb-mot-pp-pipeline.png"
+thumbnail_label: "Pipeline"
 citation: 'B. Pang, Y. Xu, J. Chen, and L. Li, &quot;PB-MOT++: Extending Pose-aware Association to Trajectory-Centric Offline Optimization,&quot; manuscript under review.'
 ---
 

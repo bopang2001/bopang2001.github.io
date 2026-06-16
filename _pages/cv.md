@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-PDF CV
+
 ======
 
 <div class="cv-pdf-viewer">

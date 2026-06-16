@@ -3,6 +3,7 @@
 {% assign post = include.post | default: post %}
 {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% assign teaser = post.teaser | default: post.header.teaser %}
+{% assign abstract_id = post.url | slugify | prepend: "abs-" %}
 
 <li itemscope itemtype="http://schema.org/ScholarlyArticle">
   <div class="col three">
@@ -25,10 +26,27 @@
       {% endif %}
     </span>
     <span class="links">
-      [<a href="{{ base_path }}{{ post.url }}">Abs</a>]
+      [<label class="publication-abstract-link" for="{{ abstract_id }}">Abs</label>]
       {% if post.paperurl %}[<a href="{{ post.paperurl }}">Webpage</a>]{% endif %}
       {% if post.projecturl and post.projecturl != post.paperurl %}[<a href="{{ post.projecturl }}">Webpage</a>]{% endif %}
+      {% if post.videourl %}[<a href="{% if post.videourl contains "://" %}{{ post.videourl }}{% else %}{{ post.videourl | prepend: base_path }}{% endif %}">Video</a>]{% endif %}
+      {% if post.kittiurl %}[<a href="{{ post.kittiurl }}">KITTI Benchmark</a>]{% endif %}
     </span>
   </div>
+  </div>
+  <input class="publication-abstract-toggle" type="checkbox" id="{{ abstract_id }}">
+  <div class="publication-abstract-modal" aria-hidden="true">
+    <label class="publication-abstract-backdrop" for="{{ abstract_id }}"></label>
+    <div class="publication-abstract-box" role="dialog" aria-modal="true" aria-labelledby="{{ abstract_id }}-title">
+      <label class="publication-abstract-close" for="{{ abstract_id }}">Close</label>
+      <h3 id="{{ abstract_id }}-title">{{ title }}</h3>
+      {% if post.abstract %}
+        <div class="publication-abstract-body">{{ post.abstract | markdownify }}</div>
+      {% elsif post.excerpt %}
+        <div class="publication-abstract-body">{{ post.excerpt | markdownify }}</div>
+      {% else %}
+        <div class="publication-abstract-body">{{ post.content | markdownify }}</div>
+      {% endif %}
+    </div>
   </div>
 </li>
