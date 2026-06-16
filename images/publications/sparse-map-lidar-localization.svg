@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-labelledby="title desc">
-  <title id="title">Semantic sparse-map place recognition illustration</title>
+  <title id="title">Semantic-aware sparse-map retrieval illustration</title>
   <desc id="desc">A schematic sparse semantic map with place-recognition matches.</desc>
   <rect width="480" height="270" fill="#f2f6fb"/>
   <rect x="24" y="28" width="432" height="214" fill="#ffffff" stroke="#ccd7e2" stroke-width="2"/>
@@ -19,5 +19,5 @@
   <path d="M56 52 L126 92" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
   <path d="M368 156 L430 196" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
   <text x="32" y="52" fill="#263238" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Sparse Map</text>
-  <text x="32" y="78" fill="#546e7a" font-family="Arial, Helvetica, sans-serif" font-size="15">Semantic-enhanced place recognition</text>
+  <text x="32" y="78" fill="#546e7a" font-family="Arial, Helvetica, sans-serif" font-size="15">Semantic-aware sparse-map retrieval</text>
 </svg>

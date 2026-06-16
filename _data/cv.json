@@ -81,11 +81,11 @@
       "summary": "Trajectory-centric offline optimization built on pose-aware association."
     },
     {
-      "name": "Robust Place Recognition on Sparse Maps via a Semantic-Enhanced Neural Network",
+      "name": "Semantic-Aware Sparse-Map Retrieval for Robust LiDAR Localization",
       "publisher": "Manuscript in revision for journal resubmission",
       "releaseDate": "",
       "website": "",
-      "summary": "Semantic-enhanced sparse-map place recognition for robust localization and retrieval."
+      "summary": "Semantic-aware sparse-map retrieval for robust LiDAR localization."
     }
   ],
   "presentations": [],
@@ -99,11 +99,11 @@
       "description": "Pose-aware association for online 3D multi-object tracking."
     },
     {
-      "name": "Semantic-enhanced Sparse-map Place Recognition / SMENet",
+      "name": "Semantic-Aware Sparse-Map Retrieval for Robust LiDAR Localization",
       "category": "portfolio",
       "date": "",
-      "url": "/portfolio/smenet/",
-      "description": "Ongoing research on semantic-enhanced place recognition and sparse-map retrieval."
+      "url": "/portfolio/sparse-map-lidar-localization/",
+      "description": "Ongoing research on semantic-aware sparse-map retrieval for robust LiDAR localization."
     },
     {
       "name": "Map-light Robot Navigation / SignpostNav Exploration",

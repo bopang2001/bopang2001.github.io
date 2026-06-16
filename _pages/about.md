@@ -9,7 +9,7 @@ redirect_from:
 
 I am a Ph.D. student at Zhejiang University working on 3D perception and autonomous navigation. My research focuses on LiDAR-based place recognition, sparse-map retrieval, loop closure detection, 3D multi-object tracking, and map-light robot navigation.
 
-My recent work includes PB-MOT, a pose-aware association approach for online 3D multi-object tracking accepted by IROS 2025. I am also developing semantic-enhanced sparse-map place recognition methods for robust localization and retrieval in large-scale environments.
+My recent work includes PB-MOT, a pose-aware association approach for online 3D multi-object tracking accepted by IROS 2025. I am also developing semantic-aware sparse-map retrieval methods for robust LiDAR localization in large-scale environments.
 
 I am interested in overseas academic exchange, postdoctoral opportunities, and research collaborations in robotics, autonomous driving, and spatial perception.
 
