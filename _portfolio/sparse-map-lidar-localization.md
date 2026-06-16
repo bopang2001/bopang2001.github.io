@@ -1,13 +1,19 @@
 ---
-title: "Semantic-Aware Sparse-Map Retrieval for Robust LiDAR Localization"
-excerpt: "Ongoing research on semantic-aware sparse-map retrieval for robust LiDAR localization."
+title: "Semantic Sparse-Map Retrieval and Loop Closure Detection"
+excerpt: "Research experience at Zhejiang University, 2025-2026."
 collection: portfolio
 permalink: /portfolio/sparse-map-lidar-localization/
-date: 2026-01-01
+date: 2025-01-01
+period: "2025 - 2026"
+institution: "Zhejiang University"
 ---
 
-This project explores semantic-aware sparse-map retrieval for robust LiDAR localization. It studies how semantic information can support place retrieval, localization, and loop closure detection in large-scale navigation scenarios.
+**2025 - 2026**  
+**Zhejiang University**
 
-The broader goal is to reduce dependence on dense prior maps while preserving reliable localization and retrieval performance for mobile robots and autonomous systems.
+- Investigated LiDAR-based localization under sparse map conditions, treating sparse maps as compact and deployment-oriented representations for map-light navigation.
+- Designed bird's-eye-view representations that combine geometric occupancy and semantic cues for reliable retrieval under incomplete map observations.
+- Explored invariance-aware global descriptors for large-displacement loop closure detection under sparse, partial, and cross-view observations.
 
-Publication metadata, code, and benchmark details will be added when they are publicly available.
+**Related manuscript:**  
+[Semantic-Aware Sparse-Map Retrieval for Robust LiDAR Localization](/publication/2025-10-21-sparse-map-lidar-localization)

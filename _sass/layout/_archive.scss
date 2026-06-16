@@ -124,11 +124,75 @@
   padding-top: 6px;
 }
 
-.bibliography .publication-thumb img {
+.bibliography .publication-image-link,
+.bibliography .publication-media img,
+.bibliography .publication-media video {
   display: block;
-  height: auto;
+}
+
+.bibliography .publication-media img {
   border: 0;
+  border-radius: 6px;
+  height: auto;
   object-fit: cover;
+  width: 100%;
+}
+
+.publication-lightbox {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.78);
+  display: none;
+  inset: 0;
+  justify-content: center;
+  padding: 1.25rem;
+  position: fixed;
+  z-index: 10000;
+}
+
+.publication-lightbox.is-open {
+  display: flex;
+}
+
+.publication-lightbox img {
+  background: var(--global-bg-color);
+  border-radius: 6px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  max-height: 90vh;
+  max-width: 96vw;
+}
+
+.publication-lightbox-close {
+  color: #fff;
+  cursor: pointer;
+  font-size: $type-size-3;
+  line-height: 1;
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+}
+
+.research-video-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 1.5rem 0;
+}
+
+.research-video-item h3 {
+  font-size: $type-size-5;
+  margin: 0 0 0.55rem;
+}
+
+.research-video-item video {
+  background: #000;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+.research-video-item p {
+  margin-top: 0.45rem;
+  text-align: center;
 }
 
 .bibliography .title {
@@ -145,7 +209,8 @@
   color: var(--global-text-color-light);
 }
 
-.bibliography .links a {
+.bibliography .links a,
+.bibliography .publication-abstract-link {
   text-decoration: none;
 }
 
@@ -156,74 +221,22 @@
 
 .bibliography .publication-abstract-link {
   color: var(--global-link-color);
-  cursor: pointer;
-  text-decoration: none;
 }
 
-.publication-abstract-toggle {
-  display: none;
-}
-
-.publication-abstract-modal {
-  display: none;
-}
-
-.publication-abstract-toggle:checked + .publication-abstract-modal {
-  align-items: center;
-  display: flex;
-  inset: 0;
-  justify-content: center;
-  padding: 1.25rem;
-  position: fixed;
-  z-index: 10000;
-}
-
-.publication-abstract-backdrop {
-  background: rgba(0, 0, 0, 0.45);
-  cursor: pointer;
-  inset: 0;
-  position: absolute;
-}
-
-.publication-abstract-box {
-  background: var(--global-bg-color);
-  border: 1px solid var(--global-border-color);
-  border-radius: $border-radius;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.24);
-  max-height: 75vh;
-  max-width: 42rem;
-  overflow-y: auto;
-  padding: 1.25rem 1.4rem 1.35rem;
-  position: relative;
-  width: 100%;
-}
-
-.publication-abstract-box h3 {
-  border-bottom: 1px solid var(--global-border-color);
-  font-size: $type-size-5;
-  margin: 0 4rem 0.8rem 0;
-  padding-bottom: 0.55rem;
-}
-
-.publication-abstract-body {
+.bibliography .publication-abstract {
+  border-left: 3px solid var(--global-border-color);
+  color: var(--global-text-color);
   font-size: $type-size-6;
+  margin-top: 0.55rem;
+  padding-left: 0.85rem;
 }
 
-.publication-abstract-body p:last-child {
+.bibliography .publication-abstract.hidden {
+  display: none;
+}
+
+.bibliography .publication-abstract p:last-child {
   margin-bottom: 0;
-}
-
-.publication-abstract-close {
-  color: var(--global-link-color);
-  cursor: pointer;
-  font-size: $type-size-6;
-  position: absolute;
-  right: 1.2rem;
-  top: 1.05rem;
-}
-
-.publication-abstract-close:hover {
-  text-decoration: underline;
 }
 
 @include breakpoint(max-width $small) {

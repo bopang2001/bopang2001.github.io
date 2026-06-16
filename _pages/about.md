@@ -33,19 +33,6 @@ Research Interests
 - Online 3D multi-object tracking
 - Autonomous navigation and map-light robot navigation
 
-Selected Video Demonstration
-======
-
-<div class="video-wrapper" style="max-width: 900px; margin: 1.5rem auto;">
-  <video autoplay muted loop playsinline preload="auto" controls poster="/images/publications/pb-mot-pipeline.png" style="width: 100%; border-radius: 10px; display: block;">
-    <source src="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p style="text-align: center;">
-    <a href="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" target="_blank" rel="noopener">Open full video</a>
-  </p>
-</div>
-
 Publications
 ======
 

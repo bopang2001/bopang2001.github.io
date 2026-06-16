@@ -97,25 +97,25 @@
   "teaching": [],
   "portfolio": [
     {
-      "name": "PB-MOT",
+      "name": "Trajectory-Centric 3D Multi-Object Tracking",
       "category": "portfolio",
-      "date": "2025-10-19",
-      "url": "/portfolio/pb-mot/",
-      "description": "Pose-aware association for online 3D multi-object tracking."
+      "date": "2023-01-01",
+      "url": "/portfolio/trajectory-centric-3d-mot/",
+      "description": "Developed pose-aware online tracking and trajectory-centric offline optimization for KITTI 3D multi-object tracking."
     },
     {
       "name": "Semantic-Aware Sparse-Map Retrieval for Robust LiDAR Localization",
       "category": "portfolio",
-      "date": "",
+      "date": "2025-01-01",
       "url": "/portfolio/sparse-map-lidar-localization/",
-      "description": "Ongoing research on semantic-aware sparse-map retrieval for robust LiDAR localization."
+      "description": "Investigated semantic sparse-map retrieval and loop closure detection for LiDAR-based localization."
     },
     {
-      "name": "Map-light Robot Navigation / SignpostNav Exploration",
+      "name": "Vision-Language Navigation with Coarse Maps and Semantic Landmarks",
       "category": "portfolio",
-      "date": "",
+      "date": "2026-01-01",
       "url": "/portfolio/signpostnav/",
-      "description": "Under-development research on map-light navigation."
+      "description": "Explored semantic landmarks and coarse maps for language-guided localization and route reasoning."
     }
   ]
 }

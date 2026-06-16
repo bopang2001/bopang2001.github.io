@@ -1,13 +1,16 @@
 ---
-title: "Map-light Robot Navigation / SignpostNav Exploration"
-excerpt: "Under-development research on map-light navigation using sparse environmental cues."
+title: "Vision-Language Navigation with Coarse Maps and Semantic Landmarks"
+excerpt: "Research experience at Zhejiang University, 2026-present."
 collection: portfolio
 permalink: /portfolio/signpostnav/
 date: 2026-01-01
+period: "2026 - Present"
+institution: "Zhejiang University"
 ---
 
-This project explores map-light robot navigation, with an emphasis on using sparse environmental cues for navigation and localization in practical robotics settings.
+**2026 - Present**  
+**Zhejiang University**
 
-The current research direction connects sparse-map retrieval, place recognition, and autonomous navigation, aiming to support navigation systems that rely less on heavy pre-built maps.
-
-This work is under development. Public publication, code, and dataset information will be added when available.
+- Studying how navigation signs, object landmarks, and scene-level semantic structures can serve as reliable anchors for language-guided localization and route reasoning.
+- Exploring spatial-semantic representations that connect geometric perception, place recognition, and language-conditioned navigation decisions in map-light robotic systems.
+- Extending previous research experience in LiDAR-based place recognition and loop closure detection toward more interactive, instruction-aware, and cognitively grounded autonomous navigation.

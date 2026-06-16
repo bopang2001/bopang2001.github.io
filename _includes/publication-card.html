@@ -4,12 +4,30 @@
 {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% assign teaser = post.teaser | default: post.header.teaser %}
 {% assign abstract_id = post.url | slugify | prepend: "abs-" %}
+{% assign teaser_url = nil %}
+{% if teaser %}
+  {% if teaser contains "://" %}
+    {% assign teaser_url = teaser %}
+  {% else %}
+    {% assign teaser_url = teaser | prepend: "/images/" | prepend: base_path %}
+  {% endif %}
+{% endif %}
+{% assign video_url = nil %}
+{% if post.videourl %}
+  {% if post.videourl contains "://" %}
+    {% assign video_url = post.videourl %}
+  {% else %}
+    {% assign video_url = post.videourl | prepend: base_path %}
+  {% endif %}
+{% endif %}
 
 <li itemscope itemtype="http://schema.org/ScholarlyArticle">
   <div class="col three">
-  <div class="publication-thumb">
-    {% if teaser %}
-      <img class="col bibone first" src="{% if teaser contains "://" %}{{ teaser }}{% else %}{{ teaser | prepend: "/images/" | prepend: base_path }}{% endif %}" alt="">
+  <div class="publication-media col bibone first">
+    {% if teaser_url %}
+      <a class="publication-image-link" href="{{ teaser_url }}" aria-label="View larger image for {{ title | strip_html }}">
+        <img src="{{ teaser_url }}" alt="">
+      </a>
     {% endif %}
   </div>
 
@@ -26,27 +44,21 @@
       {% endif %}
     </span>
     <span class="links">
-      [<label class="publication-abstract-link" for="{{ abstract_id }}">Abs</label>]
+      [<a class="publication-abstract-link" href="#{{ abstract_id }}" aria-expanded="false">Abs</a>]
       {% if post.paperurl %}[<a href="{{ post.paperurl }}">Webpage</a>]{% endif %}
       {% if post.projecturl and post.projecturl != post.paperurl %}[<a href="{{ post.projecturl }}">Webpage</a>]{% endif %}
-      {% if post.videourl %}[<a href="{% if post.videourl contains "://" %}{{ post.videourl }}{% else %}{{ post.videourl | prepend: base_path }}{% endif %}">Video</a>]{% endif %}
+      {% if video_url %}[<a href="{{ video_url }}">Video</a>]{% endif %}
       {% if post.kittiurl %}[<a href="{{ post.kittiurl }}">KITTI Benchmark</a>]{% endif %}
     </span>
-  </div>
-  </div>
-  <input class="publication-abstract-toggle" type="checkbox" id="{{ abstract_id }}">
-  <div class="publication-abstract-modal" aria-hidden="true">
-    <label class="publication-abstract-backdrop" for="{{ abstract_id }}"></label>
-    <div class="publication-abstract-box" role="dialog" aria-modal="true" aria-labelledby="{{ abstract_id }}-title">
-      <label class="publication-abstract-close" for="{{ abstract_id }}">Close</label>
-      <h3 id="{{ abstract_id }}-title">{{ title }}</h3>
+    <span class="publication-abstract hidden" id="{{ abstract_id }}">
       {% if post.abstract %}
-        <div class="publication-abstract-body">{{ post.abstract | markdownify }}</div>
+        {{ post.abstract | markdownify }}
       {% elsif post.excerpt %}
-        <div class="publication-abstract-body">{{ post.excerpt | markdownify }}</div>
+        {{ post.excerpt | markdownify }}
       {% else %}
-        <div class="publication-abstract-body">{{ post.content | markdownify }}</div>
+        {{ post.content | markdownify }}
       {% endif %}
-    </div>
+    </span>
+  </div>
   </div>
 </li>

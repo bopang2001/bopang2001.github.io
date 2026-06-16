@@ -1,13 +1,13 @@
 ---
 layout: archive
-title: "Projects"
+title: "Research Experience"
 permalink: /portfolio/
 author_profile: true
 ---
 
 {% include base_path %}
 
-
-{% for post in site.portfolio %}
+{% assign experiences = site.portfolio | sort: "date" | reverse %}
+{% for post in experiences %}
   {% include archive-single.html %}
 {% endfor %}
