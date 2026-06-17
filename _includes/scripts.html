@@ -48,7 +48,7 @@
 
 <script>
   (function () {
-    var storageKey = "bopang_site_total_views_max";
+    var storageKey = "bopang_homepage_views_max";
 
     var parseViews = function (value) {
       var number = parseInt(String(value || "").replace(/[^\d]/g, ""), 10);
@@ -72,7 +72,7 @@
     };
 
     var getViewsTarget = function () {
-      return document.getElementById("vercount_value_site_pv") || document.getElementById("busuanzi_value_site_pv");
+      return document.getElementById("vercount_value_page_pv") || document.getElementById("vercount_value_site_pv") || document.getElementById("busuanzi_value_site_pv");
     };
 
     var renderStableViews = function () {
@@ -112,7 +112,9 @@
   })();
 </script>
 
-<script defer src="https://events.vercount.one/js"></script>
+{% if page.url == "/" or page.url == "/index.html" %}
+  <script defer src="https://events.vercount.one/js"></script>
+{% endif %}
 
 {% include analytics.html %}
 

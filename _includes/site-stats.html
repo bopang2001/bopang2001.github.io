@@ -5,9 +5,11 @@
       <dt>Updated</dt>
       <dd>{{ site.time | date: "%Y-%m-%d" }}</dd>
     </div>
-    <div class="site-stats__row">
-      <dt>Total Views</dt>
-      <dd><span id="vercount_value_site_pv" data-view-floor="{{ site.total_views_floor | default: 0 }}">Loading</span></dd>
-    </div>
+    {% if page.url == "/" or page.url == "/index.html" %}
+      <div class="site-stats__row">
+        <dt>Total Views</dt>
+        <dd><span id="vercount_value_page_pv" data-view-floor="{{ site.total_views_floor | default: 0 }}">Loading</span></dd>
+      </div>
+    {% endif %}
   </dl>
 </div>
