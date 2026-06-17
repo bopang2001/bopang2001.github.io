@@ -22,11 +22,11 @@ I am open to overseas visiting research opportunities and long-term collaboratio
 Education
 ======
 
-**Zhejiang University**, Hangzhou, China<br>
+**[Zhejiang University](https://www.zju.edu.cn/english/)**, [Hangzhou, China](https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China)<br>
 Ph.D. in Control Science and Engineering, Sep 2023 -- Present<br>
 Advisors: Prof. Liang Li and Prof. Jiming Chen
 
-**Shandong University**, Jinan, China<br>
+**[Shandong University](https://www.en.sdu.edu.cn/)**, Jinan, China<br>
 B.Eng. in Automation, Sep 2019 -- Jun 2023<br>
 Advisors: Prof. Chaoqun Wang, Prof. Yan Li, and Prof. Bo Sun<br>
 GPA: 96.69 / 100

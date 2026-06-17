@@ -28,7 +28,9 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student at Zhejiang University. My research focuses on 3D perception, LiDAR-based place recognition, sparse-map retrieval, 3D multi-object tracking, and autonomous navigation."
   location         : "Hangzhou, China"
+  location_url     : "https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China"
   employer         : "Zhejiang University"
+  employer_url     : "https://www.zju.edu.cn/english/"
   uri              : # URL
   email            : # TODO: add public email
 

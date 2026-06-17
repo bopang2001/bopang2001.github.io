@@ -13,6 +13,7 @@
       "countryCode": "China",
       "region": ""
     },
+    "locationUrl": "https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China",
     "profiles": [
       {
         "network": "Google Scholar",
@@ -45,6 +46,7 @@
   "education": [
     {
       "institution": "Zhejiang University",
+      "url": "https://www.zju.edu.cn/english/",
       "area": "Ph.D. student",
       "studyType": "",
       "startDate": "2023-09",
@@ -54,6 +56,7 @@
     },
     {
       "institution": "Shandong University",
+      "url": "https://www.en.sdu.edu.cn/",
       "area": "B.Eng.",
       "studyType": "",
       "startDate": "2019-09",
