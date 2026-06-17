@@ -46,6 +46,68 @@
   });
 </script>
 
+<script>
+  (function () {
+    var storageKey = "bopang_site_total_views_max";
+
+    var parseViews = function (value) {
+      var number = parseInt(String(value || "").replace(/[^\d]/g, ""), 10);
+      return Number.isFinite(number) ? number : 0;
+    };
+
+    var readStoredViews = function () {
+      try {
+        return parseViews(window.localStorage.getItem(storageKey));
+      } catch (error) {
+        return 0;
+      }
+    };
+
+    var writeStoredViews = function (value) {
+      try {
+        window.localStorage.setItem(storageKey, String(value));
+      } catch (error) {
+        return;
+      }
+    };
+
+    var renderStableViews = function () {
+      var target = document.getElementById("busuanzi_value_site_pv");
+      if (!target) return;
+
+      var floor = parseViews(target.getAttribute("data-view-floor"));
+      var current = parseViews(target.textContent);
+      var stored = readStoredViews();
+      var stable = Math.max(floor, current, stored);
+
+      if (stable > 0) {
+        var formatted = stable.toLocaleString("en-US");
+        if (target.textContent !== formatted) {
+          target.textContent = formatted;
+        }
+        if (stable > stored) {
+          writeStoredViews(stable);
+        }
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var target = document.getElementById("busuanzi_value_site_pv");
+      if (!target) return;
+
+      renderStableViews();
+
+      if ("MutationObserver" in window) {
+        var observer = new MutationObserver(renderStableViews);
+        observer.observe(target, { childList: true, characterData: true, subtree: true });
+      }
+
+      window.setTimeout(renderStableViews, 1200);
+      window.setTimeout(renderStableViews, 3500);
+    });
+  })();
+</script>
+
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 {% include analytics.html %}

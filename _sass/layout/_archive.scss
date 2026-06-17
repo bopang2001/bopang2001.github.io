@@ -243,21 +243,65 @@
 
 .education-entry {
   align-items: flex-start;
-  display: flex;
-  gap: 0.9rem;
+  display: grid;
+  column-gap: 0.75rem;
+  grid-template-columns: 3.9rem minmax(0, 1fr);
   margin: 0 0 1rem;
 }
 
+.education-logo-link {
+  align-items: flex-start;
+  display: flex;
+  height: 3.9rem;
+  justify-content: center;
+  line-height: 1;
+  width: 3.9rem;
+}
+
 .education-logo {
-  flex: 0 0 4.2rem;
-  height: 4.2rem;
+  flex: 0 0 3.9rem;
+  height: 3.9rem;
+  margin: 0;
   object-fit: contain;
-  width: 4.2rem;
+  width: 3.9rem;
 }
 
 .education-text {
+  align-self: start;
+  flex: 1 1 auto;
   font-size: $type-size-6;
   line-height: 1.45;
+  min-width: 0;
+}
+
+.education-text > div {
+  margin: 0 0 0.12rem;
+}
+
+.education-primary {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 520px) {
+  .education-entry {
+    grid-template-columns: 3.4rem minmax(0, 1fr);
+  }
+
+  .education-logo-link,
+  .education-logo {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+
+  .education-primary {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
 }
 
 .research-card-grid,
