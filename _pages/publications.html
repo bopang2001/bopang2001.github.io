@@ -11,8 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-Publications
-======
+<h2>Published Papers</h2>
 
 <ol class="bibliography">
 {% assign publications = site.publications | where: "status_group", "publication" | sort: "publication_order" %}
@@ -21,8 +20,7 @@ Publications
 {% endfor %}
 </ol>
 
-Manuscripts
-======
+<h2>Manuscripts</h2>
 
 <ol class="bibliography manuscript-list">
 {% assign manuscripts = site.publications | where: "status_group", "manuscript" | sort: "publication_order" %}

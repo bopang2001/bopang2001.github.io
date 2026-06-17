@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <title>Eyeglasses favicon</title>
-  <text x="32" y="46" text-anchor="middle" font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif" font-size="48">👓</text>
+  <g fill="none" stroke="#111827" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M118 252c-42 0-74 31-74 73s32 73 74 73h58c42 0 74-31 74-73s-32-73-74-73h-58z" fill="#f8fbff" stroke-width="30"/>
+    <path d="M336 252c-42 0-74 31-74 73s32 73 74 73h58c42 0 74-31 74-73s-32-73-74-73h-58z" fill="#f8fbff" stroke-width="30"/>
+    <path d="M250 318c10-15 29-15 39 0" stroke-width="26"/>
+    <path d="M58 287 32 224c-7-17 5-35 24-35h46c20 0 37 14 41 33l7 30" stroke-width="28"/>
+    <path d="m454 287 26-63c7-17-5-35-24-35h-46c-20 0-37 14-41 33l-7 30" stroke-width="28"/>
+    <path d="M111 301h70" stroke="#2563eb" stroke-width="18" opacity="0.65"/>
+    <path d="M331 301h70" stroke="#2563eb" stroke-width="18" opacity="0.65"/>
+  </g>
 </svg>

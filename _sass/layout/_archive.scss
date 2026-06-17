@@ -318,6 +318,23 @@
   margin-top: 1.35rem;
 }
 
+.engineering-card-list {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.35rem 0 2rem;
+}
+
+.engineering-card-list .engineering-card {
+  align-items: flex-start;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: minmax(160px, 28%) minmax(0, 1fr);
+}
+
+.engineering-card-list .engineering-card img {
+  margin-bottom: 0;
+}
+
 .research-card,
 .engineering-card {
   border: 1px solid var(--global-border-color);
@@ -343,6 +360,16 @@
   margin-bottom: 0.65rem;
   object-fit: cover;
   width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .engineering-card-list .engineering-card {
+    display: block;
+  }
+
+  .engineering-card-list .engineering-card img {
+    margin-bottom: 0.65rem;
+  }
 }
 
 .research-card h3,

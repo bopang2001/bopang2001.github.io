@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign experiences = site.portfolio | sort: "date" | reverse %}
+{% assign experiences = site.portfolio | where_exp: "post", "post.institution != 'Hands-on Engineering'" | sort: "date" | reverse %}
 {% for post in experiences %}
   {% include archive-single.html %}
 {% endfor %}
