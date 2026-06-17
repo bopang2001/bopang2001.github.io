@@ -26,7 +26,7 @@
   <div class="publication-media col bibone first">
     {% if teaser_url %}
       <a class="publication-image-link" href="{{ teaser_url }}" aria-label="View larger image for {{ title | strip_html }}">
-        <img src="{{ teaser_url }}" alt="">
+        <img src="{{ teaser_url }}" alt="{{ post.thumbnail_label | default: title | strip_html }}">
       </a>
     {% endif %}
   </div>
@@ -45,10 +45,10 @@
     </span>
     <span class="links">
       [<a class="publication-abstract-link" href="#{{ abstract_id }}" aria-expanded="false">Abs</a>]
-      {% if post.paperurl %}[<a href="{{ post.paperurl }}">Webpage</a>]{% endif %}
-      {% if post.projecturl and post.projecturl != post.paperurl %}[<a href="{{ post.projecturl }}">Webpage</a>]{% endif %}
-      {% if video_url %}[<a href="{{ video_url }}">Video</a>]{% endif %}
-      {% if post.kittiurl %}[<a href="{{ post.kittiurl }}">KITTI Benchmark</a>]{% endif %}
+      {% if post.paperurl %}[<a href="{{ post.paperurl }}">Paper</a>]{% endif %}
+      {% if post.projecturl and post.projecturl != post.paperurl %}[<a href="{{ post.projecturl }}">Project Page</a>]{% endif %}
+      {% if video_url %}[<a href="{{ video_url }}">Video Demo</a>]{% endif %}
+      {% if post.kittiurl %}[<a href="{{ post.kittiurl }}">Benchmark</a>]{% endif %}
     </span>
     <span class="publication-abstract hidden" id="{{ abstract_id }}">
       {% if post.abstract %}

@@ -328,3 +328,42 @@
     }
   }
 }
+
+.site-stats {
+  border-top: 1px solid var(--global-border-color);
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+}
+
+.site-stats__title {
+  color: var(--global-text-color);
+  font-size: $type-size-6;
+  margin: 0 0 0.45rem;
+}
+
+.site-stats__list {
+  margin: 0;
+}
+
+.site-stats__row {
+  display: grid;
+  gap: 0.35rem;
+  grid-template-columns: minmax(5.2rem, auto) 1fr;
+  margin: 0.25rem 0;
+}
+
+.site-stats dt,
+.site-stats dd {
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.site-stats dt {
+  color: var(--global-text-color-light);
+}
+
+.site-stats dd {
+  overflow-wrap: anywhere;
+}

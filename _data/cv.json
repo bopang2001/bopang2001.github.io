@@ -47,8 +47,17 @@
       "institution": "Zhejiang University",
       "area": "Ph.D. student",
       "studyType": "",
-      "startDate": "",
+      "startDate": "2023-09",
       "endDate": "Present",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Shandong University",
+      "area": "B.Eng.",
+      "studyType": "",
+      "startDate": "2019-09",
+      "endDate": "2023-06",
       "gpa": null,
       "courses": []
     }
@@ -65,6 +74,17 @@
         "Autonomous navigation",
         "Map-light robot navigation"
       ]
+    },
+    {
+      "name": "Robotic Systems & Prototyping",
+      "keywords": [
+        "Autonomous vehicle debugging",
+        "Perception-system integration",
+        "PCB design",
+        "Embedded electronics",
+        "Sensor interfacing",
+        "Field validation"
+      ]
     }
   ],
   "languages": [],
@@ -76,7 +96,7 @@
       "publisher": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
       "releaseDate": "2025-10-19",
       "website": "https://ieeexplore.ieee.org/document/11247375/",
-      "summary": "Conference paper. DOI: 10.1109/IROS60139.2025.11247375."
+      "summary": "Accepted publication. DOI: 10.1109/IROS60139.2025.11247375."
     },
     {
       "name": "PB-MOT++: Extending Pose-aware Association to Trajectory-Centric Offline Optimization",
@@ -97,25 +117,25 @@
   "teaching": [],
   "portfolio": [
     {
-      "name": "Trajectory-Centric 3D Multi-Object Tracking",
+      "name": "Vision-Language Navigation with Coarse Maps and Semantic Landmarks",
       "category": "portfolio",
-      "date": "2023-01-01",
-      "url": "/portfolio/trajectory-centric-3d-mot/",
-      "description": "Developed pose-aware online tracking and trajectory-centric offline optimization for KITTI 3D multi-object tracking."
+      "date": "2026-01-01",
+      "url": "/portfolio/signpostnav/",
+      "description": "Explored semantic landmarks and coarse maps for language-guided localization and route reasoning."
     },
     {
-      "name": "Semantic-Aware Sparse-Map Retrieval for Robust LiDAR Localization",
+      "name": "Semantic Sparse-Map Retrieval and Loop Closure Detection",
       "category": "portfolio",
       "date": "2025-01-01",
       "url": "/portfolio/sparse-map-lidar-localization/",
       "description": "Investigated semantic sparse-map retrieval and loop closure detection for LiDAR-based localization."
     },
     {
-      "name": "Vision-Language Navigation with Coarse Maps and Semantic Landmarks",
+      "name": "Trajectory-Centric 3D Multi-Object Tracking",
       "category": "portfolio",
-      "date": "2026-01-01",
-      "url": "/portfolio/signpostnav/",
-      "description": "Explored semantic landmarks and coarse maps for language-guided localization and route reasoning."
+      "date": "2023-01-01",
+      "url": "/portfolio/trajectory-centric-3d-mot/",
+      "description": "Developed pose-aware online tracking and trajectory-centric offline optimization for KITTI 3D multi-object tracking."
     }
   ]
 }

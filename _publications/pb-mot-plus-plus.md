@@ -2,6 +2,7 @@
 title: "PB-MOT++: Extending Pose-aware Association to Trajectory-Centric Offline Optimization"
 collection: publications
 category: manuscripts
+status_group: manuscript
 publication_order: 2
 authors: "<strong>Bo Pang</strong>, Yang Xu, Jiming Chen, and Liang Li"
 permalink: /publication/2025-10-20-pb-mot-plus-plus
@@ -12,6 +13,7 @@ abstract: >-
   Extensive experiments on the KITTI benchmark demonstrate the effectiveness of PB-MOT++. Our method achieves state-of-the-art performance with 83.16% HOTA and 87.23% AssA, while maintaining 2351.08 FPS on a CPU-only platform. These results show that high-fidelity offline trajectory optimization can substantially improve tracking quality with minimal computational overhead.
 venue: "Manuscript under review"
 status: "Manuscript under review"
+projecturl: "/portfolio/trajectory-centric-3d-mot/"
 videourl: "https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-motpp.mp4"
 kittiurl: "https://www.cvlibs.net/datasets/kitti/eval_tracking_detail.php?result=c84c4a1ca8d9548e0647af9aeba0c276b805144a"
 teaser: "publications/pb-mot-pp-pipeline.png"

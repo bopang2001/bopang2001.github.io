@@ -11,7 +11,9 @@ redirect_from:
 {% include base_path %}
 
 
-======
+<p class="cta-links">
+  <a href="{{ base_path }}/files/MyCV.pdf">Download CV</a>
+</p>
 
 <div class="cv-pdf-viewer">
   <object data="{{ base_path }}/files/MyCV.pdf" type="application/pdf">

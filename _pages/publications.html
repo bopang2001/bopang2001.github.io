@@ -11,9 +11,22 @@ author_profile: true
 
 {% include base_path %}
 
+Publications
+======
+
 <ol class="bibliography">
-{% assign publications = site.publications | sort: "publication_order" %}
+{% assign publications = site.publications | where: "status_group", "publication" | sort: "publication_order" %}
 {% for post in publications %}
+  {% include publication-card.html post=post %}
+{% endfor %}
+</ol>
+
+Manuscripts
+======
+
+<ol class="bibliography manuscript-list">
+{% assign manuscripts = site.publications | where: "status_group", "manuscript" | sort: "publication_order" %}
+{% for post in manuscripts %}
   {% include publication-card.html post=post %}
 {% endfor %}
 </ol>

@@ -2,28 +2,39 @@
 permalink: /
 title: "Bo Pang"
 author_profile: true
+description: "Bo Pang's academic homepage for 3D perception, LiDAR place recognition, sparse-map retrieval, 3D multi-object tracking, and autonomous navigation."
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a Ph.D. student at Zhejiang University working on 3D perception and autonomous navigation. My research focuses on LiDAR-based place recognition, sparse-map retrieval, loop closure detection, 3D multi-object tracking, and map-light robot navigation.
+I am a Ph.D. student at Zhejiang University working on 3D perception and autonomous navigation. My research focuses on LiDAR-based place recognition, sparse-map retrieval, loop closure detection, and 3D multi-object tracking for robust autonomous systems. I am particularly interested in map-light robot navigation, where robots operate with sparse, incomplete, or human-readable environmental cues.
 
-My recent work includes PB-MOT, a pose-aware association approach for online 3D multi-object tracking accepted by IROS 2025. I am also developing semantic-aware sparse-map retrieval methods for robust LiDAR localization in large-scale environments.
+I am open to overseas visiting research opportunities and long-term collaborations in robotics, autonomous driving, and embodied navigation.
 
-I am interested in overseas academic exchange, postdoctoral opportunities, and research collaborations in robotics, autonomous driving, and spatial perception.
+<p class="cta-links">
+  <a href="/publications/">Publications</a>
+  <a href="/portfolio/">Research</a>
+  <a href="/cv/">CV</a>
+  <a href="/files/MyCV.pdf">Download CV</a>
+  <a href="https://scholar.google.com/citations?user=jLPrDZkAAAAJ&hl">Google Scholar</a>
+  <a href="https://github.com/bopang2001">GitHub</a>
+</p>
 
-Education
+Research Highlights
 ======
 
-**Zhejiang University**, Hangzhou, China  
-Ph.D. in Control Science and Engineering, Sep 2023 -- Present  
-Advisors: Prof. Liang Li and Prof. Jiming Chen
+## PB-MOT in Action
 
-**Shandong University**, Jinan, China  
-B.Eng. in Automation, Sep 2019 -- Jun 2023  
-Advisors: Prof. Chaoqun Wang, Prof. Yan Li, and Prof. Bo Sun  
-GPA: 96.69 / 100
+PB-MOT is an online 3D multi-object tracking framework for autonomous driving, focusing on pose-aware association and robust trajectory continuity.
+
+<div class="video-wrapper">
+  <video autoplay muted loop playsinline preload="auto" controls poster="/images/publications/pb-mot-pipeline.png">
+    <source src="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p><a href="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" target="_blank" rel="noopener">Open full-resolution video</a></p>
+</div>
 
 Research Interests
 ======
@@ -39,8 +50,68 @@ Publications
 {% include base_path %}
 
 <ol class="bibliography">
-{% assign publications = site.publications | sort: "publication_order" %}
+{% assign publications = site.publications | where: "status_group", "publication" | sort: "publication_order" %}
 {% for post in publications %}
   {% include publication-card.html post=post %}
 {% endfor %}
 </ol>
+
+Manuscripts
+======
+
+<ol class="bibliography">
+{% assign manuscripts = site.publications | where: "status_group", "manuscript" | sort: "publication_order" %}
+{% for post in manuscripts %}
+  {% include publication-card.html post=post %}
+{% endfor %}
+</ol>
+
+Research Experience
+======
+
+<div class="research-card-grid">
+  <div class="research-card">
+    <h3><a href="/portfolio/signpostnav/">Vision-Language Navigation with Coarse Maps and Semantic Landmarks</a></h3>
+    <p class="research-card-meta">Zhejiang University, 2026 - Present</p>
+    <p>Semantic landmarks, coarse maps, and language-guided route reasoning for map-light robotic navigation.</p>
+  </div>
+  <div class="research-card">
+    <h3><a href="/portfolio/sparse-map-lidar-localization/">Semantic Sparse-Map Retrieval and Loop Closure Detection</a></h3>
+    <p class="research-card-meta">Zhejiang University, 2025 - 2026</p>
+    <p>LiDAR-based localization and loop closure under sparse, incomplete, and deployment-oriented map representations.</p>
+  </div>
+  <div class="research-card">
+    <h3><a href="/portfolio/trajectory-centric-3d-mot/">Trajectory-Centric 3D Multi-Object Tracking</a></h3>
+    <p class="research-card-meta">Zhejiang University, 2023 - 2025</p>
+    <p>Pose-aware online tracking and trajectory-centric offline optimization for autonomous driving perception.</p>
+  </div>
+</div>
+
+Robotic Systems & Prototyping
+======
+
+Beyond algorithm development, I have hands-on experience in robotic system integration, including autonomous vehicle debugging, embedded electronics, PCB design, sensor interfacing, and field deployment. This engineering background helps me bridge perception algorithms with real robotic platforms, from data acquisition and hardware debugging to system-level validation.
+
+<div class="engineering-card-grid">
+  <div class="engineering-card">
+    <h3>Autonomous Vehicle Debugging</h3>
+    <p>System-level debugging for intelligent vehicle platforms, with emphasis on perception-system integration, data acquisition, and field validation.</p>
+  </div>
+  <div class="engineering-card">
+    <h3>PCB & Embedded Electronics</h3>
+    <p>PCB design, sensor interfacing, embedded electronics, and power and communication considerations for robotic systems.</p>
+  </div>
+  <div class="engineering-card">
+    <h3>Field Robotics Integration</h3>
+    <p>Connecting perception algorithms with sensors, computing hardware, data collection workflows, and practical robotic platform validation.</p>
+  </div>
+</div>
+
+Education
+======
+
+**Zhejiang University**, Hangzhou, China<br>
+Ph.D. student, Sep 2023 -- Present
+
+**Shandong University**, Jinan, China<br>
+B.Eng., Sep 2019 -- Jun 2023

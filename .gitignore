@@ -21,4 +21,10 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Large original videos should be hosted as GitHub Release assets, not committed
 images/publications/video/*.mp4
+images/publications/video/pb-mot.mp4
+images/publications/video/pb-motpp.mp4
+*.mov
+*.avi
