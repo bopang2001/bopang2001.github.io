@@ -141,6 +141,10 @@
   text-decoration-style: dotted;
 }
 
+.inline-toggle-link {
+  text-decoration-style: dotted;
+}
+
 .bibliography .publication-media img {
   border: 0;
   border-radius: 6px;
@@ -429,6 +433,22 @@
   color: var(--global-text-color-light);
   font-size: $type-size-6;
   margin: 0;
+}
+
+.service-item .inline-photo {
+  margin-top: 0.75rem;
+}
+
+.service-item .inline-photo.hidden {
+  display: none;
+}
+
+.service-item .inline-photo img {
+  border-radius: 6px;
+  display: block;
+  height: auto;
+  max-width: 720px;
+  width: 100%;
 }
 
 .bibliography .title {

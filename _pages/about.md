@@ -8,9 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student at Zhejiang University working on 3D perception and autonomous navigation. My research focuses on LiDAR-based place recognition, sparse-map retrieval, loop closure detection, and 3D multi-object tracking for robust autonomous systems. I am particularly interested in map-light robot navigation, where robots operate with sparse, incomplete, or human-readable environmental cues.
+I am a Ph.D. candidate in Control Science and Engineering at Zhejiang University. My research lies at the intersection of 3D perception, robot localization, and autonomous navigation.
 
-I am open to overseas visiting research opportunities and long-term collaborations in robotics, autonomous driving, and embodied navigation.
+My work focuses on LiDAR place recognition and sparse-map localization, 3D multi-object tracking, and trajectory-level perception for autonomous systems. I am also exploring sign-aware map-light navigation, where robots use environmental signs, semantic landmarks, and human-readable cues for route understanding and progress verification.
+
+I am open to visiting research opportunities and long-term collaborations in robotics, autonomous driving, and embodied navigation.
 
 <p class="cta-links">
   <a href="/publications/">Publications</a>
@@ -74,10 +76,11 @@ Research Highlights
 Research Interests
 ======
 
-- 3D perception and LiDAR-based scene understanding
-- Place recognition, sparse-map retrieval, and loop closure detection
-- Online 3D multi-object tracking
-- Autonomous navigation and map-light robot navigation
+- 3D perception for autonomous systems
+- LiDAR place recognition, loop closure, and sparse-map localization
+- 3D multi-object tracking and trajectory-level perception
+- Sign-aware map-light navigation with semantic landmarks
+- Robotics and machine learning
 
 Publications
 ======

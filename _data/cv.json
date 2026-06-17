@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Bo Pang",
-    "label": "Ph.D. student, Zhejiang University",
+    "label": "Ph.D. candidate, Zhejiang University",
     "email": "",
     "phone": "",
     "website": "https://bopang2001.github.io",
-    "summary": "Ph.D. student at Zhejiang University working on 3D perception, LiDAR-based place recognition, sparse-map retrieval, 3D multi-object tracking, and autonomous navigation.",
+    "summary": "Ph.D. candidate at Zhejiang University working on 3D perception and autonomous navigation, with interests in LiDAR place recognition, 3D multi-object tracking, and sign-aware map-light navigation.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -49,7 +49,7 @@
       "url": "https://www.zju.edu.cn/english/",
       "location": "Hangzhou, China",
       "locationUrl": "https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China",
-      "area": "Ph.D. student",
+      "area": "Ph.D. candidate",
       "studyType": "",
       "startDate": "2023-09",
       "endDate": "Present",
@@ -74,7 +74,7 @@
       "name": "Research Areas",
       "keywords": [
         "3D perception",
-        "LiDAR-based place recognition",
+        "LiDAR place recognition",
         "Sparse-map retrieval",
         "Loop closure detection",
         "3D multi-object tracking",

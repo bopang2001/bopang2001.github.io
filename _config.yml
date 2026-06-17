@@ -26,7 +26,7 @@ author:
   avatar           : "ieee.jpg"
   name             : "Bo Pang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student at Zhejiang University. My research focuses on 3D perception, LiDAR-based place recognition, sparse-map retrieval, 3D multi-object tracking, and autonomous navigation."
+  bio              : "Ph.D. candidate at Zhejiang University working on 3D perception and autonomous navigation, with interests in LiDAR place recognition, 3D multi-object tracking, and sign-aware map-light navigation."
   location         : "Hangzhou, China"
   location_url     : "https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China"
   employer         : "Zhejiang University"
