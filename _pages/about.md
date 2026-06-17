@@ -17,23 +17,42 @@ I am open to overseas visiting research opportunities and long-term collaboratio
   <a href="/portfolio/">Research</a>
   <a href="/cv/">CV</a>
   <a href="/files/MyCV.pdf">Download CV</a>
-  <a href="https://scholar.google.com/citations?user=jLPrDZkAAAAJ&hl">Google Scholar</a>
-  <a href="https://github.com/bopang2001">GitHub</a>
 </p>
+
+Education
+======
+
+**Zhejiang University**, Hangzhou, China<br>
+Ph.D. in Control Science and Engineering, Sep 2023 -- Present<br>
+Advisors: Prof. Liang Li and Prof. Jiming Chen
+
+**Shandong University**, Jinan, China<br>
+B.Eng. in Automation, Sep 2019 -- Jun 2023<br>
+Advisors: Prof. Chaoqun Wang, Prof. Yan Li, and Prof. Bo Sun<br>
+GPA: 96.69 / 100
 
 Research Highlights
 ======
 
-## PB-MOT in Action
-
-PB-MOT is an online 3D multi-object tracking framework for autonomous driving, focusing on pose-aware association and robust trajectory continuity.
-
-<div class="video-wrapper">
-  <video autoplay muted loop playsinline preload="auto" controls poster="/images/publications/pb-mot-pipeline.png">
-    <source src="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p><a href="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" target="_blank" rel="noopener">Open full-resolution video</a></p>
+<div class="research-video-grid">
+  <div class="research-video-item">
+    <h3>PB-MOT in Action</h3>
+    <p>Online 3D multi-object tracking with pose-aware association and robust trajectory continuity.</p>
+    <video autoplay muted loop playsinline preload="auto" controls poster="/images/publications/pb-mot-pipeline.png">
+      <source src="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p><a href="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" target="_blank" rel="noopener">Open full-resolution video</a></p>
+  </div>
+  <div class="research-video-item">
+    <h3>PB-MOT++</h3>
+    <p>Trajectory-centric offline optimization for boundary recovery, topology repair, gap completion, and kinematic refinement.</p>
+    <video muted playsinline preload="metadata" controls poster="/images/publications/pb-mot-pp-pipeline.png">
+      <source src="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-motpp.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p><a href="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-motpp.mp4" target="_blank" rel="noopener">Open full-resolution video</a></p>
+  </div>
 </div>
 
 Research Interests
@@ -93,25 +112,19 @@ Robotic Systems & Prototyping
 Beyond algorithm development, I have hands-on experience in robotic system integration, including autonomous vehicle debugging, embedded electronics, PCB design, sensor interfacing, and field deployment. This engineering background helps me bridge perception algorithms with real robotic platforms, from data acquisition and hardware debugging to system-level validation.
 
 <div class="engineering-card-grid">
-  <div class="engineering-card">
+  <a class="engineering-card" href="/portfolio/autonomous-vehicle-debugging/">
+    <img src="/images/publications/pb-mot-pipeline.png" alt="Autonomous vehicle debugging placeholder">
     <h3>Autonomous Vehicle Debugging</h3>
     <p>System-level debugging for intelligent vehicle platforms, with emphasis on perception-system integration, data acquisition, and field validation.</p>
-  </div>
-  <div class="engineering-card">
+  </a>
+  <a class="engineering-card" href="/portfolio/pcb-embedded-electronics/">
+    <img src="/images/publications/sparse-map-lidar-localization.svg" alt="PCB and embedded electronics placeholder">
     <h3>PCB & Embedded Electronics</h3>
     <p>PCB design, sensor interfacing, embedded electronics, and power and communication considerations for robotic systems.</p>
-  </div>
-  <div class="engineering-card">
+  </a>
+  <a class="engineering-card" href="/portfolio/field-robotics-integration/">
+    <img src="/images/publications/pb-mot-pp-pipeline.png" alt="Field robotics integration placeholder">
     <h3>Field Robotics Integration</h3>
     <p>Connecting perception algorithms with sensors, computing hardware, data collection workflows, and practical robotic platform validation.</p>
-  </div>
+  </a>
 </div>
-
-Education
-======
-
-**Zhejiang University**, Hangzhou, China<br>
-Ph.D. student, Sep 2023 -- Present
-
-**Shandong University**, Jinan, China<br>
-B.Eng., Sep 2019 -- Jun 2023

@@ -252,6 +252,26 @@
   padding: 0.9rem;
 }
 
+.engineering-card {
+  color: inherit;
+  display: block;
+  text-decoration: none !important;
+}
+
+.engineering-card:hover {
+  box-shadow: 0 0 10px rgba(#000, 0.16);
+  text-decoration: none;
+}
+
+.engineering-card img {
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 0.65rem;
+  object-fit: cover;
+  width: 100%;
+}
+
 .research-card h3,
 .engineering-card h3 {
   font-size: $type-size-5;
@@ -268,6 +288,15 @@
 .research-card-meta {
   color: var(--global-text-color-light);
   margin: 0 0 0.45rem;
+}
+
+.project-placeholder-image {
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  display: block;
+  margin: 1rem 0 1.25rem;
+  max-width: 720px;
+  width: 100%;
 }
 
 .bibliography .title {

@@ -2,32 +2,6 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var sourceElement = document.getElementById("visitor-source");
-    if (sourceElement) {
-      var referrer = "Direct visit";
-      try {
-        if (document.referrer) referrer = new URL(document.referrer).hostname.replace(/^www\./, "");
-      } catch (error) {
-        referrer = "External site";
-      }
-      sourceElement.textContent = referrer;
-
-      if (window.fetch) {
-        fetch("https://ipapi.co/json/")
-          .then(function (response) {
-            if (!response.ok) throw new Error("Location unavailable");
-            return response.json();
-          })
-          .then(function (data) {
-            var place = [data.city, data.region, data.country_name].filter(Boolean).join(", ");
-            if (place) sourceElement.textContent = place + " · " + referrer;
-          })
-          .catch(function () {
-            sourceElement.textContent = referrer;
-          });
-      }
-    }
-
     document.querySelectorAll(".publication-abstract-link").forEach(function (link) {
       link.addEventListener("click", function (event) {
         var target = document.querySelector(link.getAttribute("href"));
