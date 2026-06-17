@@ -71,8 +71,12 @@
       }
     };
 
+    var getViewsTarget = function () {
+      return document.getElementById("vercount_value_site_pv") || document.getElementById("busuanzi_value_site_pv");
+    };
+
     var renderStableViews = function () {
-      var target = document.getElementById("busuanzi_value_site_pv");
+      var target = getViewsTarget();
       if (!target) return;
 
       var floor = parseViews(target.getAttribute("data-view-floor"));
@@ -92,7 +96,7 @@
     };
 
     document.addEventListener("DOMContentLoaded", function () {
-      var target = document.getElementById("busuanzi_value_site_pv");
+      var target = getViewsTarget();
       if (!target) return;
 
       renderStableViews();
@@ -108,7 +112,7 @@
   })();
 </script>
 
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script defer src="https://events.vercount.one/js"></script>
 
 {% include analytics.html %}
 
