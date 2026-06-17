@@ -86,8 +86,8 @@ Research Interests
 
 - 3D perception for autonomous systems
 - LiDAR place recognition, loop closure, and sparse-map localization
-- 3D multi-object tracking and trajectory-level perception
 - Sign-aware map-light navigation with semantic landmarks
+- 3D multi-object tracking and trajectory-level perception
 - Robotics and machine learning
 
 Publications

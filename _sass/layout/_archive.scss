@@ -398,6 +398,19 @@
   width: 100%;
 }
 
+.engineering-card img.engineering-card__image--focus-left {
+  object-position: 35% 50%;
+}
+
+.engineering-card img.engineering-card__image--focus-right {
+  object-position: 70% 50%;
+}
+
+.engineering-card img.engineering-card__image--contain {
+  background: var(--global-bg-color);
+  object-fit: contain;
+}
+
 @media screen and (max-width: 640px) {
   .engineering-card-list .engineering-card {
     display: block;
