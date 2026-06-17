@@ -32,7 +32,8 @@ author:
   employer         : "Zhejiang University"
   employer_url     : "https://www.zju.edu.cn/english/"
   uri              : # URL
-  email            : # TODO: add public email
+  email            : "boaltria@gmail.com"
+  work_email       : "pangbo_zju@zju.edu.cn"
 
   # Academic websites
   academia         : # URL

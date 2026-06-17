@@ -14,6 +14,14 @@ My work focuses on LiDAR place recognition and sparse-map localization, 3D multi
 
 I am open to visiting research opportunities and long-term collaborations in robotics, autonomous driving, and embodied navigation.
 
+<div class="homepage-contact">
+  <strong>Contact:</strong>
+  <a href="mailto:boaltria@gmail.com">boaltria@gmail.com</a>
+  <span>Personal</span>
+  <a href="mailto:pangbo_zju@zju.edu.cn">pangbo_zju@zju.edu.cn</a>
+  <span>Zhejiang University</span>
+</div>
+
 <p class="cta-links">
   <a href="/publications/">Publications</a>
   <a href="/portfolio/">Research</a>
@@ -125,25 +133,11 @@ Research Experience
   </div>
 </div>
 
-Robotic Systems & Prototyping
+Systems
 ======
 
-Beyond algorithm development, I have hands-on experience in robotic system integration, including autonomous vehicle debugging, embedded electronics, PCB design, sensor interfacing, and field deployment. This engineering background helps me bridge perception algorithms with real robotic platforms, from data acquisition and hardware debugging to system-level validation.
+I have hands-on experience with mobile robot platforms and embedded power electronics, with a focus on connecting sensors, onboard computing, power delivery, and robotic hardware for real-platform perception experiments.
 
-<div class="engineering-card-grid">
-  <a class="engineering-card" href="/portfolio/autonomous-vehicle-debugging/">
-    <img src="/images/publications/pb-mot-pipeline.png" alt="Autonomous vehicle debugging placeholder">
-    <h3>Autonomous Vehicle Debugging</h3>
-    <p>System-level debugging for intelligent vehicle platforms, with emphasis on perception-system integration, data acquisition, and field validation.</p>
-  </a>
-  <a class="engineering-card" href="/portfolio/pcb-embedded-electronics/">
-    <img src="/images/publications/sparse-map-lidar-localization.svg" alt="PCB and embedded electronics placeholder">
-    <h3>PCB & Embedded Electronics</h3>
-    <p>PCB design, sensor interfacing, embedded electronics, and power and communication considerations for robotic systems.</p>
-  </a>
-  <a class="engineering-card" href="/portfolio/field-robotics-integration/">
-    <img src="/images/publications/pb-mot-pp-pipeline.png" alt="Field robotics integration placeholder">
-    <h3>Field Robotics Integration</h3>
-    <p>Connecting perception algorithms with sensors, computing hardware, data collection workflows, and practical robotic platform validation.</p>
-  </a>
-</div>
+<p class="cta-links">
+  <a href="/robotic-systems/">View Systems Work</a>
+</p>

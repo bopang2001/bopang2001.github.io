@@ -2,7 +2,7 @@
   "basics": {
     "name": "Bo Pang",
     "label": "Ph.D. candidate, Zhejiang University",
-    "email": "",
+    "email": "boaltria@gmail.com",
     "phone": "",
     "website": "https://bopang2001.github.io",
     "summary": "Ph.D. candidate at Zhejiang University working on 3D perception and autonomous navigation, with interests in LiDAR place recognition, 3D multi-object tracking, and sign-aware map-light navigation.",
@@ -39,6 +39,11 @@
         "network": "LinkedIn",
         "username": "bo-pang-43b503360",
         "url": "https://www.linkedin.com/in/bo-pang-43b503360/"
+      },
+      {
+        "network": "ZJU Email",
+        "username": "pangbo_zju@zju.edu.cn",
+        "url": "mailto:pangbo_zju@zju.edu.cn"
       }
     ]
   },
