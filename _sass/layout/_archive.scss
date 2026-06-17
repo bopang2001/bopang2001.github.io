@@ -367,6 +367,10 @@
   margin-bottom: 0;
 }
 
+.engineering-card-list .engineering-card--text {
+  display: block;
+}
+
 .research-card,
 .engineering-card {
   border: 1px solid var(--global-border-color);
