@@ -329,6 +329,13 @@
   }
 }
 
+.author__urls .author__desktop a {
+  display: inline;
+  font-size: inherit;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .site-stats {
   border-top: 1px solid var(--global-border-color);
   margin-top: 1rem;

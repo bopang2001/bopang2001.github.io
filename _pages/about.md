@@ -22,21 +22,33 @@ I am open to overseas visiting research opportunities and long-term collaboratio
 Education
 ======
 
-**[Zhejiang University](https://www.zju.edu.cn/english/)**, [Hangzhou, China](https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China)<br>
-Ph.D. in Control Science and Engineering, Sep 2023 -- Present<br>
-Advisors: Prof. Liang Li and Prof. Jiming Chen
+<div class="education-list">
+  <div class="education-entry">
+    <img class="education-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Zhejiang_University_Logo.svg/250px-Zhejiang_University_Logo.svg.png" alt="Zhejiang University logo">
+    <div class="education-text">
+      <strong><a href="https://www.zju.edu.cn/english/" target="_blank" rel="noopener">Zhejiang University</a></strong>, <a href="https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China" target="_blank" rel="noopener">Hangzhou, China</a><br>
+      Ph.D. in Control Science and Engineering, Sep 2023 -- Present<br>
+      Advisors: Prof. Liang Li and Prof. Jiming Chen
+    </div>
+  </div>
 
-**[Shandong University](https://www.en.sdu.edu.cn/)**, Jinan, China<br>
-B.Eng. in Automation, Sep 2019 -- Jun 2023<br>
-Advisors: Prof. Chaoqun Wang, Prof. Yan Li, and Prof. Bo Sun<br>
-GPA: 96.69 / 100
+  <div class="education-entry">
+    <img class="education-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Shandong_University_Emblem.svg/250px-Shandong_University_Emblem.svg.png" alt="Shandong University logo">
+    <div class="education-text">
+      <strong><a href="https://www.en.sdu.edu.cn/" target="_blank" rel="noopener">Shandong University</a></strong>, <a href="https://earth.google.com/web/search/Central+Campus,+Shandong+University,+27+Shanda+Nanlu,+Jinan,+China" target="_blank" rel="noopener">Jinan, China</a><br>
+      B.Eng. in Automation, Sep 2019 -- Jun 2023<br>
+      Advisors: Prof. Chaoqun Wang, Prof. Yan Li, and Prof. Bo Sun<br>
+      GPA: 96.69 / 100
+    </div>
+  </div>
+</div>
 
 Research Highlights
 ======
 
 <div class="research-video-grid">
   <div class="research-video-item">
-    <h3>PB-MOT in Action</h3>
+    <h3>PB-MOT </h3>
     <p>Online 3D multi-object tracking with pose-aware association and robust trajectory continuity.</p>
     <video autoplay muted loop playsinline preload="auto" controls poster="/images/publications/pb-mot-pipeline.png">
       <source src="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-mot.mp4" type="video/mp4">

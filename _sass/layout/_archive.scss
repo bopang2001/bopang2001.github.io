@@ -237,6 +237,29 @@
   text-decoration: underline;
 }
 
+.education-list {
+  margin: 1rem 0 1.6rem;
+}
+
+.education-entry {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.education-logo {
+  flex: 0 0 4.2rem;
+  height: 4.2rem;
+  object-fit: contain;
+  width: 4.2rem;
+}
+
+.education-text {
+  font-size: $type-size-6;
+  line-height: 1.45;
+}
+
 .research-card-grid,
 .engineering-card-grid {
   display: grid;

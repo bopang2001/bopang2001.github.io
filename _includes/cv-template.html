@@ -44,7 +44,7 @@
       
       {% if cv.basics.location.city %}
       <div class="cv-contact-item">
-        <i class="fas fa-map-marker-alt"></i> {% capture cv_location %}{{ cv.basics.location.city }}{% if cv.basics.location.region %}, {{ cv.basics.location.region }}{% endif %}{% if cv.basics.location.countryCode %}, {{ cv.basics.location.countryCode }}{% endif %}{% endcapture %}{% if cv.basics.locationUrl %}<a href="{{ cv.basics.locationUrl }}" target="_blank">{{ cv_location }}</a>{% else %}{{ cv_location }}{% endif %}
+        <i class="fas fa-map-marker-alt"></i> {% capture cv_location %}{{ cv.basics.location.city }}{% if cv.basics.location.region %}, {{ cv.basics.location.region }}{% endif %}{% if cv.basics.location.countryCode %}, {{ cv.basics.location.countryCode }}{% endif %}{% endcapture %}{% if cv.basics.locationUrl %}<a href="{{ cv.basics.locationUrl }}" target="_blank" rel="noopener">{{ cv_location }}</a>{% else %}{{ cv_location }}{% endif %}
       </div>
       {% endif %}
     </div>
@@ -80,7 +80,7 @@
           <div class="cv-item-date">{{ education.endDate }}</div>
         </div>
         <div class="cv-item-content">
-          <div class="cv-item-subtitle">{% if education.url %}<a href="{{ education.url }}" target="_blank">{{ education.institution }}</a>{% else %}{{ education.institution }}{% endif %}</div>
+          <div class="cv-item-subtitle">{% if education.url %}<a href="{{ education.url }}" target="_blank" rel="noopener">{{ education.institution }}</a>{% else %}{{ education.institution }}{% endif %}{% if education.location %}, {% if education.locationUrl %}<a href="{{ education.locationUrl }}" target="_blank" rel="noopener">{{ education.location }}</a>{% else %}{{ education.location }}{% endif %}{% endif %}</div>
           {% if education.gpa %}
           <div class="cv-item-detail">GPA: {{ education.gpa }}</div>
           {% endif %}

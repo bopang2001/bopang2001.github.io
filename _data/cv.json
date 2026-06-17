@@ -47,6 +47,8 @@
     {
       "institution": "Zhejiang University",
       "url": "https://www.zju.edu.cn/english/",
+      "location": "Hangzhou, China",
+      "locationUrl": "https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China",
       "area": "Ph.D. student",
       "studyType": "",
       "startDate": "2023-09",
@@ -57,6 +59,8 @@
     {
       "institution": "Shandong University",
       "url": "https://www.en.sdu.edu.cn/",
+      "location": "Jinan, China",
+      "locationUrl": "https://earth.google.com/web/search/Central+Campus,+Shandong+University,+27+Shanda+Nanlu,+Jinan,+China",
       "area": "B.Eng.",
       "studyType": "",
       "startDate": "2019-09",
