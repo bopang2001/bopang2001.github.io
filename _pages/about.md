@@ -47,7 +47,7 @@ Research Highlights
   <div class="research-video-item">
     <h3>PB-MOT++</h3>
     <p>Trajectory-centric offline optimization for boundary recovery, topology repair, gap completion, and kinematic refinement.</p>
-    <video muted playsinline preload="metadata" controls poster="/images/publications/pb-mot-pp-pipeline.png">
+    <video autoplay muted loop playsinline preload="auto" controls poster="/images/publications/pb-mot-pp-pipeline.png">
       <source src="https://github.com/bopang2001/bopang2001.github.io/releases/download/videos-1/pb-motpp.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>

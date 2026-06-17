@@ -218,7 +218,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 1.1rem 0 1.6rem;
+  margin: 1.25rem 0 1.8rem;
 }
 
 .cta-links a {
@@ -226,9 +226,9 @@
   border-radius: 6px;
   color: var(--global-link-color);
   display: inline-block;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   line-height: 1.2;
-  padding: 0.45rem 0.7rem;
+  padding: 0.6rem 0.9rem;
   text-decoration: none;
 }
 
@@ -243,6 +243,11 @@
   gap: 0.9rem;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   margin: 1rem 0 2rem;
+}
+
+.engineering-card-grid--featured {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 1.35rem;
 }
 
 .research-card,
@@ -297,6 +302,27 @@
   margin: 1rem 0 1.25rem;
   max-width: 720px;
   width: 100%;
+}
+
+.service-list {
+  margin: 1rem 0 2rem;
+}
+
+.service-item {
+  border-bottom: 1px solid var(--global-border-color);
+  padding: 0.75rem 0;
+}
+
+.service-item h3 {
+  font-size: $type-size-5;
+  line-height: 1.25;
+  margin: 0 0 0.25rem;
+}
+
+.service-item p {
+  color: var(--global-text-color-light);
+  font-size: $type-size-6;
+  margin: 0;
 }
 
 .bibliography .title {

@@ -113,8 +113,52 @@
       "summary": "Semantic-aware sparse-map retrieval for robust LiDAR localization."
     }
   ],
-  "presentations": [],
-  "teaching": [],
+  "presentations": [
+    {
+      "name": "PB-MOT: Pose-aware Association Boosted Online 3D Multi-Object Tracking",
+      "event": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "date": "2025",
+      "location": "",
+      "description": "Accepted conference paper."
+    }
+  ],
+  "teaching": [
+    {
+      "course": "Robotics II: Mobile Robotics",
+      "institution": "Department of Control Science and Engineering, Zhejiang University",
+      "role": "Teaching Assistant",
+      "date": "2024-09",
+      "description": "Sep 2024 - Jan 2025."
+    },
+    {
+      "course": "Intelligent Mobile Systems",
+      "institution": "Department of Control Science and Engineering, Zhejiang University",
+      "role": "Teaching Assistant",
+      "date": "2023-09",
+      "description": "Sep 2023 - Jan 2024."
+    },
+    {
+      "course": "SDG-NAS Summer School on Networked Autonomous Systems",
+      "institution": "Zhejiang University",
+      "role": "Teaching Assistant",
+      "date": "2025-07",
+      "description": "Jul 2025."
+    },
+    {
+      "course": "SDG-NAS Summer School on Networked Autonomous Systems",
+      "institution": "Zhejiang University",
+      "role": "Teaching Assistant",
+      "date": "2024-08",
+      "description": "Aug 2024."
+    },
+    {
+      "course": "National PhD Student Academic Forum in Control Science and Engineering",
+      "institution": "Zhejiang University",
+      "role": "Volunteer",
+      "date": "2024-11",
+      "description": "Nov 2024."
+    }
+  ],
   "portfolio": [
     {
       "name": "Vision-Language Navigation with Coarse Maps and Semantic Landmarks",

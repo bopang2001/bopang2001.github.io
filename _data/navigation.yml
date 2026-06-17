@@ -16,6 +16,12 @@ main:
 
   - title: "Research"
     url: /portfolio/
-    
+
+  - title: "Systems"
+    url: /robotic-systems/
+
+  - title: "Engagement"
+    url: /engagement/
+
   - title: "CV"
     url: /cv/
