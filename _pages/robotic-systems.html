@@ -31,28 +31,49 @@ description: "Hands-on mobile robot platform debugging, embedded power electroni
       <h3>Mobile Robot Platform Debugging</h3>
       <p>Hands-on experience bringing up and debugging mobile robot, UGV, and intelligent vehicle platforms. Work includes connecting sensors, onboard computers, chassis control, power systems, and data-acquisition workflows for real-platform perception experiments.</p>
 
-      <h4>Jackal-based UGV platform</h4>
-      <p>Connected an onboard computer with a Velodyne VLP-16 LiDAR sensor and chassis-control interface. Also integrated a laptop-class compute platform with an Intel 14600H-class CPU and an RTX 4060 GPU onto the same robot, including power delivery, signal connections, and system-level interaction.</p>
+      <div class="system-submenu">
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">Jackal-based UGV platform</span>
+            <span class="system-subcard__meta">Velodyne VLP-16, chassis control, and laptop-class onboard compute integration.</span>
+          </summary>
+          <p>Connected an onboard computer with a Velodyne VLP-16 LiDAR sensor and chassis-control interface. Also integrated a laptop-class compute platform with an Intel 14600H-class CPU and an RTX 4060 GPU onto the same robot, including power delivery, signal connections, and system-level interaction.</p>
+          <div class="systems-gallery">
+            <figure>
+              <img src="/images/system/jackal.jpg" alt="Jackal UGV platform with LiDAR and onboard compute setup" loading="lazy">
+              <figcaption>Jackal UGV platform used for sensor, compute, and chassis-control debugging.</figcaption>
+            </figure>
+          </div>
+        </details>
 
-      <div class="systems-gallery">
-        <figure>
-          <img src="/images/system/jackal.jpg" alt="Jackal UGV platform with LiDAR and onboard compute setup" loading="lazy">
-          <figcaption>Jackal UGV platform used for sensor, compute, and chassis-control debugging.</figcaption>
-        </figure>
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">Ranger Mini-class UGV platform</span>
+            <span class="system-subcard__meta">Livox LiDAR and Intel N100-class onboard computing.</span>
+          </summary>
+          <p>Worked with a Livox LiDAR setup and communication with an Intel N100-class onboard computing unit for mobile robot perception and data acquisition.</p>
+          <!-- TODO: Add test photo for Ranger Mini-class UGV platform with Livox LiDAR. -->
+        </details>
+
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">ARM-based compute boards</span>
+            <span class="system-subcard__meta">Raspberry Pi 4B, RK3566, and RK3588 platform-side computing.</span>
+          </summary>
+          <p>Experience with Raspberry Pi 4B, RK3566, and RK3588 computing boards for embedded robotic systems and platform-side computing.</p>
+          <!-- TODO: Add test photo for ARM-based compute boards. -->
+        </details>
+
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">MCU-based racing vehicle</span>
+            <span class="system-subcard__meta">Video-signal processing and low-level control debugging.</span>
+          </summary>
+          <p>Developed and debugged video-signal processing and low-level control for an MCU-based racing vehicle platform.</p>
+          <!-- TODO: Add Bilibili demo link for MCU-based racing vehicle. -->
+          <!-- TODO: Add test photo for MCU-based racing vehicle. -->
+        </details>
       </div>
-
-      <h4>Ranger Mini-class UGV platform</h4>
-      <p>Worked with a Livox LiDAR setup and communication with an Intel N100-class onboard computing unit for mobile robot perception and data acquisition.</p>
-      <!-- TODO: Add test photo for Ranger Mini-class UGV platform with Livox LiDAR. -->
-
-      <h4>ARM-based compute boards</h4>
-      <p>Experience with Raspberry Pi 4B, RK3566, and RK3588 computing boards for embedded robotic systems and platform-side computing.</p>
-      <!-- TODO: Add test photo for ARM-based compute boards. -->
-
-      <h4>MCU-based racing vehicle</h4>
-      <p>Developed and debugged video-signal processing and low-level control for an MCU-based racing vehicle platform.</p>
-      <!-- TODO: Add Bilibili demo link for MCU-based racing vehicle. -->
-      <!-- TODO: Add test photo for MCU-based racing vehicle. -->
     </div>
   </details>
 
@@ -78,31 +99,57 @@ description: "Hands-on mobile robot platform debugging, embedded power electroni
       <h3>PCB & Embedded Power Electronics</h3>
       <p>Experience designing compact PCB-based power and interface modules for mobile robotic systems, especially where high-current power delivery, limited space, and reliable field debugging are important.</p>
 
-      <h4>High-current DC-DC buck module for mobile compute payloads</h4>
-      <p>Designed a compact DC-DC buck module rated at 600 W with over 800 W peak output, providing 19 V / 30 A+ and 12 V / 8 A outputs. The module reaches over 98% measured efficiency excluding cable loss, with an 80 mm x 49 mm footprint. It is intended for powering laptop-class compute platforms on mobile robots.</p>
+      <div class="system-submenu">
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">High-current DC-DC buck module for mobile compute payloads</span>
+            <span class="system-subcard__meta">600 W rated, over 800 W peak, 80 mm x 49 mm footprint.</span>
+          </summary>
+          <p>Designed a compact DC-DC buck module rated at 600 W with over 800 W peak output, providing 19 V / 30 A+ and 12 V / 8 A outputs. The module reaches over 98% measured efficiency excluding cable loss, with an 80 mm x 49 mm footprint. It is intended for powering laptop-class compute platforms on mobile robots.</p>
+          <div class="systems-gallery">
+            <figure>
+              <img src="/images/system/nuc_dc.jpg" alt="Custom high-current DC-DC power module for onboard compute payloads" loading="lazy">
+              <figcaption>Compact DC-DC power module for onboard compute payloads.</figcaption>
+            </figure>
+          </div>
+        </details>
 
-      <div class="systems-gallery">
-        <figure>
-          <img src="/images/system/nuc_dc.jpg" alt="Custom high-current DC-DC power module for onboard compute payloads" loading="lazy">
-          <figcaption>Compact DC-DC power module for onboard compute payloads.</figcaption>
-        </figure>
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">ATX 3.1 DC-DC power module for desktop-class onboard computing</span>
+            <span class="system-subcard__meta">800 W rated and over 1000 W peak output.</span>
+          </summary>
+          <p>Designed an ATX 3.1-compatible DC-DC buck module rated at 800 W with over 1000 W peak output, intended for mobile robotic platforms carrying desktop-class onboard computing.</p>
+          <!-- TODO: Add test photo for ATX 3.1 DC-DC power module. -->
+        </details>
+
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">Miniature low-noise power module</span>
+            <span class="system-subcard__meta">3.3 W module with 8.3 mm x 6.4 mm footprint.</span>
+          </summary>
+          <p>Designed a 3.3 W low-noise power module with an 8.3 mm x 6.4 mm footprint and output ripple below 10 mV Vpp, targeting space-constrained robotic systems that require clean local power.</p>
+          <!-- TODO: Add test photo for miniature low-noise power module. -->
+        </details>
+
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">Wide-input Li-ion battery charge-discharge module</span>
+            <span class="system-subcard__meta">2.5-7 V input with integrated cell for compact UPS use.</span>
+          </summary>
+          <p>Designed a 2.5-7 V wide-input lithium-ion battery charge-discharge module with an integrated cell, suitable for compact uninterruptible power supply applications.</p>
+          <!-- TODO: Add test photo for wide-input Li-ion battery charge-discharge module. -->
+        </details>
+
+        <details class="system-subcard">
+          <summary>
+            <span class="system-subcard__title">Battery-powered USB debugging hub</span>
+            <span class="system-subcard__meta">12-port hub with up to 60 W output.</span>
+          </summary>
+          <p>Designed a 12-port USB power hub with up to 60 W output, intended for battery-powered field debugging and long-duration outdoor testing.</p>
+          <!-- TODO: Add test photo for battery-powered USB debugging hub. -->
+        </details>
       </div>
-
-      <h4>ATX 3.1 DC-DC power module for desktop-class onboard computing</h4>
-      <p>Designed an ATX 3.1-compatible DC-DC buck module rated at 800 W with over 1000 W peak output, intended for mobile robotic platforms carrying desktop-class onboard computing.</p>
-      <!-- TODO: Add test photo for ATX 3.1 DC-DC power module. -->
-
-      <h4>Miniature low-noise power module</h4>
-      <p>Designed a 3.3 W low-noise power module with an 8.3 mm x 6.4 mm footprint and output ripple below 10 mV Vpp, targeting space-constrained robotic systems that require clean local power.</p>
-      <!-- TODO: Add test photo for miniature low-noise power module. -->
-
-      <h4>Wide-input Li-ion battery charge-discharge module</h4>
-      <p>Designed a 2.5-7 V wide-input lithium-ion battery charge-discharge module with an integrated cell, suitable for compact uninterruptible power supply applications.</p>
-      <!-- TODO: Add test photo for wide-input Li-ion battery charge-discharge module. -->
-
-      <h4>Battery-powered USB debugging hub</h4>
-      <p>Designed a 12-port USB power hub with up to 60 W output, intended for battery-powered field debugging and long-duration outdoor testing.</p>
-      <!-- TODO: Add test photo for battery-powered USB debugging hub. -->
     </div>
   </details>
 </div>
