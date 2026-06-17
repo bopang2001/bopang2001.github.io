@@ -125,9 +125,20 @@
 }
 
 .bibliography .publication-image-link,
+.image-lightbox-link,
+.bibliography .publication-media img,
+.bibliography .publication-media video {
+  cursor: zoom-in;
+}
+
+.bibliography .publication-image-link,
 .bibliography .publication-media img,
 .bibliography .publication-media video {
   display: block;
+}
+
+.image-lightbox-link {
+  text-decoration-style: dotted;
 }
 
 .bibliography .publication-media img {
