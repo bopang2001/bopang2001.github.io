@@ -3,31 +3,42 @@ layout: archive
 title: "Robotic Systems & Prototyping"
 permalink: /robotic-systems/
 author_profile: true
-description: "Hands-on robotic system integration, autonomous vehicle debugging, PCB design, embedded electronics, and field robotics validation."
+description: "Hands-on mobile robot platform debugging, embedded power electronics, onboard computing, and real-platform perception experiments."
 ---
 
-Beyond algorithm development, I have hands-on experience in robotic system integration, including autonomous vehicle debugging, embedded electronics, PCB design, sensor interfacing, and field deployment. This engineering background helps me bridge perception algorithms with real robotic platforms, from data acquisition and hardware debugging to system-level validation.
+I have hands-on experience with mobile robot platforms and embedded power electronics, with a focus on connecting sensors, onboard computing, power delivery, and robotic hardware for perception experiments on real platforms.
 
 <div class="engineering-card-list">
   <a class="engineering-card" href="/portfolio/autonomous-vehicle-debugging/">
-    <img src="/images/system/jackal.jpg" alt="Jackal mobile robot debugging setup">
+    <img src="/images/system/jackal.jpg" alt="Jackal UGV platform with Velodyne VLP-16 LiDAR">
     <div class="engineering-card__body">
-      <h3>Autonomous Vehicle Debugging</h3>
-      <p>System-level debugging for intelligent vehicle platforms, with emphasis on perception-system integration, data acquisition, and field validation.</p>
+      <h3>Mobile Robot Platform Debugging</h3>
+      <p>Hands-on experience with UGV and intelligent vehicle platform setup and debugging, including LiDAR setup, chassis control, onboard computing, power/signal interconnects, and data acquisition.</p>
+      <p>Work includes bringing up and debugging mobile robot, UGV, and intelligent vehicle platforms by connecting sensors, onboard computers, chassis control, power systems, and data-acquisition workflows for real-platform perception experiments.</p>
+      <ul>
+        <li><strong>Jackal-based UGV platform:</strong> connected an onboard computer with a Velodyne VLP-16 LiDAR sensor and chassis-control interface. Also integrated a laptop-class compute platform with an Intel 14600H-class CPU and an RTX 4060 GPU onto the same robot, including power delivery, signal connections, and system-level interaction.</li>
+        <li><strong>Ranger Mini-class UGV platform:</strong> worked with a Livox LiDAR setup and communication with an Intel N100-class onboard computing unit for mobile robot perception and data acquisition.</li>
+        <li><strong>ARM-based compute boards:</strong> experience with Raspberry Pi 4B, RK3566, and RK3588 computing boards for embedded robotic systems and platform-side computing.</li>
+        <li><strong>MCU-based racing vehicle:</strong> developed and debugged video-signal processing and low-level control for an MCU-based racing vehicle platform.</li>
+      </ul>
+      <!-- TODO: Add Bilibili demo link for MCU-based racing vehicle. -->
+      <!-- TODO: Add future photos: images/systems/jackal-compute-platform.jpg, images/systems/ranger-mini-livox.jpg, images/systems/arm-compute-boards.jpg, images/systems/mcu-racing-car.jpg. -->
     </div>
   </a>
   <a class="engineering-card" href="/portfolio/pcb-embedded-electronics/">
-    <img src="/images/system/nuc_dc.jpg" alt="Custom DC-DC power PCB for robotic systems">
+    <img src="/images/system/nuc_dc.jpg" alt="High-current DC-DC buck module for mobile compute payloads">
     <div class="engineering-card__body">
-      <h3>PCB & Embedded Electronics</h3>
-      <p>PCB design, sensor interfacing, embedded electronics, and power and communication considerations for robotic systems.</p>
-    </div>
-  </a>
-  <a class="engineering-card" href="/portfolio/field-robotics-integration/">
-    <img src="/images/system/jackal.jpg" alt="Field robotics integration with a Jackal platform">
-    <div class="engineering-card__body">
-      <h3>Field Robotics Integration</h3>
-      <p>Connecting perception algorithms with sensors, computing hardware, data collection workflows, and practical robotic platform validation.</p>
+      <h3>PCB & Embedded Power Electronics</h3>
+      <p>Compact power and interface modules for robotic systems, including high-current DC-DC conversion, onboard compute power delivery, low-noise supplies, and battery-powered debugging utilities.</p>
+      <p>Experience designing compact PCB-based power and interface modules for mobile robotic systems, especially where high-current power delivery, limited space, and reliable field debugging are important.</p>
+      <ul>
+        <li><strong>High-current DC-DC buck module for mobile compute payloads:</strong> designed a compact DC-DC buck module rated at 600 W with over 800 W peak output, providing 19 V / 30 A+ and 12 V / 8 A outputs. The module reaches over 98% measured efficiency excluding cable loss, with an 80 mm x 49 mm footprint. It is intended for powering laptop-class compute platforms on mobile robots.</li>
+        <li><strong>ATX 3.1 DC-DC power module for desktop-class onboard computing:</strong> designed an ATX 3.1-compatible DC-DC buck module rated at 800 W with over 1000 W peak output, intended for mobile robotic platforms carrying a full desktop PC system.</li>
+        <li><strong>Miniature low-noise power module:</strong> designed a 3.3 W low-noise power module with an 8.3 mm x 6.4 mm footprint and output ripple below 10 mV Vpp, targeting space-constrained robotic systems that require clean local power.</li>
+        <li><strong>Wide-input Li-ion battery charge-discharge module:</strong> designed a 2.5-7 V wide-input lithium-ion battery charge-discharge module with an integrated cell, suitable for compact uninterruptible power supply applications.</li>
+        <li><strong>Battery-powered USB debugging hub:</strong> designed a 12-port USB power hub with up to 60 W output, intended for battery-powered field debugging and long-duration outdoor testing.</li>
+      </ul>
+      <!-- TODO: Add future photos: images/systems/atx31-dcdc-module.jpg, images/systems/low-noise-power-module.jpg, images/systems/liion-ups-module.jpg, images/systems/usb-power-hub.jpg. -->
     </div>
   </a>
 </div>
