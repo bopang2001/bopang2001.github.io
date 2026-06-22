@@ -40,7 +40,7 @@ Education
     <div class="education-text">
       <div class="education-primary"><strong><a href="https://www.zju.edu.cn/english/" target="_blank" rel="noopener">Zhejiang University</a></strong><span>,</span><a href="https://earth.google.com/web/search/Yuquan+Campus,+Zhejiang+University,+38+Zheda+Road,+Hangzhou,+China" target="_blank" rel="noopener">Hangzhou, China</a></div>
       <div>Ph.D. in Control Science and Engineering, Sep 2023 -- Present</div>
-      <div>Advisors: Prof. Liang Li and Prof. Jiming Chen</div>
+      <div>Advisors: Prof. <a href="https://scholar.google.com/citations?user=6JscxDkAAAAJ" target="_blank" rel="noopener">Liang Li</a> and Prof. <a href="https://scholar.google.com/citations?user=zK9tvo8AAAAJ" target="_blank" rel="noopener">Jiming Chen</a></div>
     </div>
   </div>
 
